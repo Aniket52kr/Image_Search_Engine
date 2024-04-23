@@ -1,0 +1,203 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-image: url(Image.jpg);
+}
+.container {
+    max-width: 600px;
+    margin: auto;
+}
+.input-group {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-container {
+    margin-top: 20px;
+}
+.image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+
+}
+
+#text-input{
+    width: 60%;
+    max-width: 400px;
+    padding: 10px 20px;
+    border: 1.5px solid white;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-size: 18px;
+    color: #333;
+    color: white;
+    background-color: transparent;
+    margin: 0 10px 0 0;
+}
+
+#generate-button{
+    padding: 10px 20px;
+    background-color: transparent;
+    color: white;
+    border: 1.5px solid white;
+    font-size: 18px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin: 0 10px 0 0;
+}
+
+#num-images{
+    height: 38px;
+    border-radius: 5px;
+    margin: 0 10px 0 0;
+    color: white;
+    border: 1.5px solid white;
+    background-color: transparent;
+}
+
+.image-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.img-container{
+    margin-bottom: 60px;
+    width: 30%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border: 1.5px solid white;
+}
+
+.img-container img{
+    height: 370px;
+    width: 100%;
+    object-fit: cover;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.img-container:hover img{
+    opacity: 0.8;
+} 
+
+.image{
+    border: 2px solid white;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+
+
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 768px) {
+    .input-group {
+        flex-direction: column; 
+    }
+
+    h1 {
+        font-size: 6vw; 
+    }
+
+    #text-input {
+        width: 90%; 
+        max-width: 90vw; 
+        font-size: 3vw; 
+        padding: 2vw 3vw; 
+    }
+
+    #generate-button{
+        width: 30%;
+    }
+
+    #num-images{
+        width: 95%;
+    }
+} 
+
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 8vw; 
+    }
+
+    #text-input {
+        width: 100%; 
+        max-width: 90vw; 
+        font-size: 4vw; 
+        padding: 2vw 2.5vw; 
+    }
+    #num-images{
+        width: 100%; 
+        max-width: 90vw; 
+        font-size: 4vw; 
+        padding: 2vw 2.5vw; 
+    }
+    #generate-button{
+        width: 30%;
+    }
+
+    .image-container {
+        margin: 5px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+} 
+
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .input-group input {
+        padding: 8px;
+    }
+
+    .input-group button {
+        padding: 8px 16px;
+    }
+
+    .img-container {
+        margin: 5px;
+        width: 100%;
+    }
+
+    #num-images{
+        width: 95%;
+        height: 23px;
+    }
+
+    #generate-button{
+        width: 30%;
+    }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .image-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-container {
+        margin: 10px 0;
+    }
+}
